@@ -48,19 +48,29 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_econ, max_dipl, max_govt, max_scty; // Max possible scores
-    max_econ = max_dipl = max_govt = max_scty = 0;
-    let econ_array = new Array(questions.length);
-    let dipl_array = new Array(questions.length);
-    let govt_array = new Array(questions.length);
-    let scty_array = new Array(questions.length);
+    var max_over, max_gndr, max_lgbt, max_ntnl, max_racl, max_rlgs, max_sxul, max_snvt, max_arts; // Max possible scores
+    max_over = max_gndr = max_lgbt = max_ntnl = max_racl = max_rlgs = max_sxul = max_snvt = max_arts = 0;
+    let over_array = new Array(questions.length);
+    let gndr_array = new Array(questions.length);
+    let lgbt_array = new Array(questions.length);
+    let ntnl_array = new Array(questions.length);
+	let racl_array = new Array(questions.length);
+	let rlgs_array = new Array(questions.length);
+	let sxul_array = new Array(questions.length);
+	let snvt_array = new Array(questions.length);
+	let arts_array = new Array(questions.length);
     var qn = 0; // Question number
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_econ += Math.abs(questions[i].effect.econ)
-        max_dipl += Math.abs(questions[i].effect.dipl)
-        max_govt += Math.abs(questions[i].effect.govt)
-        max_scty += Math.abs(questions[i].effect.scty)
+        max_over += Math.abs(questions[i].effect.over)
+        max_gndr += Math.abs(questions[i].effect.gndr)
+        max_lgbt += Math.abs(questions[i].effect.lgbt)
+        max_ntnl += Math.abs(questions[i].effect.ntnl)
+		max_racl += Math.abs(questions[i].effect.racl)
+		max_rlgs += Math.abs(questions[i].effect.rlgs)
+		max_sxul += Math.abs(questions[i].effect.sxul)
+		max_snvt += Math.abs(questions[i].effect.snvt)
+		max_arts += Math.abs(questions[i].effect.arts)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -76,10 +86,15 @@ stats"></a></div></noscript>
     }
 
     function next_question(mult) {
-        econ_array[qn] = mult*questions[qn].effect.econ
-        dipl_array[qn] = mult*questions[qn].effect.dipl
-        govt_array[qn] = mult*questions[qn].effect.govt
-        scty_array[qn] = mult*questions[qn].effect.scty
+        over_array[qn] = mult*questions[qn].effect.over
+        gndr_array[qn] = mult*questions[qn].effect.gndr
+        lgbt_array[qn] = mult*questions[qn].effect.lgbt
+        ntnl_array[qn] = mult*questions[qn].effect.ntnl
+		racl_array[qn] = mult*questions[qn].effect.racl
+		rlgs_array[qn] = mult*questions[qn].effect.rlgs
+		sxul_array[qn] = mult*questions[qn].effect.sxul
+		snvt_array[qn] = mult*questions[qn].effect.snvt
+		arts_array[qn] = mult*questions[qn].effect.arts
         qn++;
         if (qn < questions.length) {
             init_question();
@@ -101,15 +116,25 @@ stats"></a></div></noscript>
     }
 
     function results() {
-        let final_econ = econ_array.reduce((a, b) => a + b, 0)
-        let final_dipl = dipl_array.reduce((a, b) => a + b, 0)
-        let final_govt = govt_array.reduce((a, b) => a + b, 0)
-        let final_scty = scty_array.reduce((a, b) => a + b, 0)
+        let final_over = over_array.reduce((a, b) => a + b, 0)
+        let final_gndr = gndr_array.reduce((a, b) => a + b, 0)
+        let final_lgbt = lgbt_array.reduce((a, b) => a + b, 0)
+        let final_ntnl = ntnl_array.reduce((a, b) => a + b, 0)
+		let final_racl = racl_array.reduce((a, b) => a + b, 0)
+		let final_rlgs = rlgs_array.reduce((a, b) => a + b, 0)
+		let final_sxul = sxul_array.reduce((a, b) => a + b, 0)
+		let final_snvt = snvt_array.reduce((a, b) => a + b, 0)
+		let final_arts = arts_array.reduce((a, b) => a + b, 0)
         location.href = `results.html`
-            + `?e=${calc_score(final_econ,max_econ)}`
-            + `&d=${calc_score(final_dipl,max_dipl)}`
-            + `&g=${calc_score(final_govt,max_govt)}`
-            + `&s=${calc_score(final_scty,max_scty)}`
+            + `?over=${calc_score(final_over,max_over)}`
+            + `&gndr=${calc_score(final_gndr,max_gndr)}`
+            + `&lgbt=${calc_score(final_lgbt,max_lgbt)}`
+            + `&ntnl=${calc_score(final_ntnl,max_ntnl)}`
+			+ `&racl=${calc_score(final_racl,max_racl)}`
+			+ `&rlgs=${calc_score(final_rlgs,max_rlgs)}`
+			+ `&sxul=${calc_score(final_sxul,max_sxul)}`
+			+ `&snvt=${calc_score(final_snvt,max_snvt)}`
+			+ `&arts=${calc_score(final_arts,max_arts)}`
     }
 </script>
 </body>
