@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>8values Results</title>
+<title>Socialvalues Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -14,41 +14,74 @@
 </script>
 
 <body>
-<h1>8values</h1>
+<h1>Socialvalues</h1>
 <hr>
 
 <h1>Results</h1>
 
-<h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Overall Axis: <span class="weight-300" id="overall-label"></span></h2>
 <div class="axis">
-    <img id="img-equality" src="value_images/equality.svg" height="128pt"/>
-    <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
-    <div class="bar wealth" id="bar-wealth"><div class="text-wrapper" id="wealth"></div></div>
-    <img id="img-wealth" src="value_images/markets.svg" height="128pt"/>
+    <img id="img-left" src="value_images/left.svg" height="128pt"/>
+    <div class="bar left" id="bar-left"><div class="text-wrapper" id="left"></div></div>
+    <div class="bar right" id="bar-right"><div class="text-wrapper" id="right"></div></div>
+    <img id="img-right" src="value_images/right.svg" height="128pt"/>
 </div>
-<h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+<h2>Gender Axis: <span class="weight-300" id="gender-label"></span></h2>
 <div class="axis">
-    <img id="img-might" src="value_images/nation.svg" height="128pt"/>
-    <div class="bar might" id="bar-might"><div class="text-wrapper" id="might"></div></div>
-    <div class="bar peace" id="bar-peace"><div class="text-wrapper" id="peace"></div></div>
-    <img id="img-peace" src="value_images/globe.svg" height="128pt"/>
+    <img id="img-genderequality" src="value_images/genderequality.svg" height="128pt"/>
+    <div class="bar genderequality" id="bar-genderequality"><div class="text-wrapper" id="genderequality"></div></div>
+    <div class="bar genderroles" id="bar-genderroles"><div class="text-wrapper" id="genderroles"></div></div>
+    <img id="img-genderroles" src="value_images/genderroles.svg" height="128pt"/>
 </div>
-<h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
+<h2>LGBT Axis: <span class="weight-300" id="lgbt-label"></span></h2>
 <div class="axis">
-    <img id="img-liberty" src="value_images/liberty.svg" height="128pt"/>
-    <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
-    <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <img id="img-authority" src="value_images/authority.svg" height="128pt"/>
+    <img id="img-prolgbt" src="value_images/prolgbt.svg" height="128pt"/>
+    <div class="bar prolgbt" id="bar-prolgbt"><div class="text-wrapper" id="prolgbt"></div></div>
+    <div class="bar antilgbt" id="bar-antilgbt"><div class="text-wrapper" id="antilgbt"></div></div>
+    <img id="img-antilgbt" src="value_images/antilgbt.svg" height="128pt"/>
 </div>
-<h2>Societal Axis: <span class="weight-300" id="society-label"></span></h2>
+<h2>National Axis: <span class="weight-300" id="national-label"></span></h2>
 <div class="axis">
-    <img id="img-tradition" src="value_images/tradition.svg" height="128pt"/>
-    <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
-    <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
-    <img id="img-progress" src="value_images/progress.svg" height="128pt"/>
+    <img id="img-multiculturalism" src="value_images/multiculturalism.svg" height="128pt"/>
+    <div class="bar multiculturalism" id="bar-multiculturalism"><div class="text-wrapper" id="multiculturalism"></div></div>
+    <div class="bar nativism" id="bar-nativism"><div class="text-wrapper" id="nativism"></div></div>
+    <img id="img-nativism" src="value_images/nativism.svg" height="128pt"/>
 </div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
+<h2>Racial Axis: <span class="weight-300" id="racial-label"></span></h2>
+<div class="axis">
+    <img id="img-raceequality" src="value_images/raceequality.svg" height="128pt"/>
+    <div class="bar raceequality" id="bar-raceequality"><div class="text-wrapper" id="raceequality"></div></div>
+    <div class="bar racerealism" id="bar-racerealism"><div class="text-wrapper" id="racerealism"></div></div>
+    <img id="img-racerealism" src="value_images/racerealism.svg" height="128pt"/>
+</div>
+<h2>Religious Axis: <span class="weight-300" id="religious-label"></span></h2>
+<div class="axis">
+    <img id="img-secularism" src="value_images/secularism.svg" height="128pt"/>
+    <div class="bar secularism" id="bar-secularism"><div class="text-wrapper" id="secularism"></div></div>
+    <div class="bar religion" id="bar-religion"><div class="text-wrapper" id="religion"></div></div>
+    <img id="img-religion" src="value_images/religion.svg" height="128pt"/>
+</div>
+<h2>Sexual Axis: <span class="weight-300" id="sexual-label"></span></h2>
+<div class="axis">
+    <img id="img-sexualliberation" src="value_images/sexualliberation.svg" height="128pt"/>
+    <div class="bar sexualliberation" id="bar-sexualliberation"><div class="text-wrapper" id="sexualliberation"></div></div>
+    <div class="bar sexualrepression" id="bar-sexualrepression"><div class="text-wrapper" id="sexualrepression"></div></div>
+    <img id="img-sexualrepression" src="value_images/sexualrepression.svg" height="128pt"/>
+</div>
+<h2>Sensitivity Axis: <span class="weight-300" id="sensitivity-label"></span></h2>
+<div class="axis">
+    <img id="img-politicalcorrectness" src="value_images/politicalcorrectness.svg" height="128pt"/>
+    <div class="bar politicalcorrectness" id="bar-politicalcorrectness"><div class="text-wrapper" id="politicalcorrectness"></div></div>
+    <div class="bar politicalincorrectness" id="bar-politicalincorrectness"><div class="text-wrapper" id="politicalincorrectness"></div></div>
+    <img id="img-politicalincorrectness" src="value_images/politicalincorrectness.svg" height="128pt"/>
+</div>
+<h2>Artistic Axis: <span class="weight-300" id="artistic-label"></span></h2>
+<div class="axis">
+    <img id="img-modernart" src="value_images/modernart.svg" height="128pt"/>
+    <div class="bar modernart" id="bar-modernart"><div class="text-wrapper" id="modernart"></div></div>
+    <div class="bar traditionalart" id="bar-traditionalart"><div class="text-wrapper" id="traditionalart"></div></div>
+    <img id="img-traditionalart" src="value_images/traditionalart.svg" height="128pt"/>
+</div>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
 <img src="" id="banner">
@@ -91,10 +124,16 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    overArray = ["Far-Left","Left","Center-Left","Moderate","Center-Right","Right","Far-Right"]
+	gndrArray = ["???","???","???","Centrist","Conservative","???","Patriarchal"]
+    lgbtArray = ["Extremely Pro-LGBT","Pro-LGBT","Moderately Pro-LGBT","Balanced","Moderately Anti-LGBT","Anti-LGBT","Extremely Anti-LGBT"]
+    ntnlArray = ["Extremely Multiculturalist","Multiculturalist","Moderately Multiculturalist","Moderate","Moderately Nativist","Nativist","Extremely Nativist"]
+    raclArray = ["???","???","???","Neutral","???","Race Realist","Supremacist"]
+	rlgsArray = ["Atheistic","Secular","Moderately Secular","Moderate","Moderately Religious","Religious","Theocratic"]
+	sxulArray = ["Extremely Permissive","Permissive","Moderately Permissive","Neutral","Moderately Repressive","Repressive","Extremely Repressive"]
+	snvtArray = ["Extremely Politically Correct","Politically Correct","Moderately Politically Correct","Centrist","Moderately Politically Incorrect","Politically Incorrect","Extremely Politically Incorrect"]
+	artsArray = ["Extremely Modernist","Modernist","Moderately Modernist","Balanced","Moderately Traditionalist","Traditionalist","Extremely Traditionalist"]
+	
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -108,30 +147,55 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    left  = getQueryVariable("overall")
+    genderequality     = getQueryVariable("gender")
+    prolgbt   = getQueryVariable("lgbt")
+    multiculturalism  = getQueryVariable("national")
+	raceequality  = getQueryVariable("racial")
+	secularism  = getQueryVariable("religious")
+	sexualliberation  = getQueryVariable("sexual")
+	politicalcorrectness  = getQueryVariable("sensitivity")
+	modernart  = getQueryVariable("artistic")
+	right    = (100 - left).toFixed(1)
+    genderroles    = (100 - genderequality).toFixed(1)
+    antilgbt     = (100 - prolgbt   ).toFixed(1)
+    nativism = (100 - multiculturalism ).toFixed(1)
+	racerealism = (100 - raceequality).toFixed(1)
+    religion = (100 - secularism).toFixed(1)
+	sexualrepression = (100 - sexualliberation).toFixed(1)
+	politicalincorrectness = (100 - politicalcorrectness).toFixed(1)
+	traditionalart = (100 - modernart).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("left", left)
+    setBarValue("right", right)
+    setBarValue("genderequality", genderequality)
+    setBarValue("genderroles", genderroles)
+    setBarValue("prolgbt", prolgbt)
+    setBarValue("antilgbt", antilgbt)
+    setBarValue("multiculturalism", multiculturalism)
+    setBarValue("nativism", nativism)
+	setBarValue("raceequality",raceequality)
+	setBarValue("racerealism",racerealism)
+	setBarValue("secularism",secularism)
+	setBarValue("religion",religion)
+	setBarValue("sexualliberation",sexualliberation)
+	setBarValue("sexualrepression",sexualrepression)
+	setBarValue("politicalcorrectness",politicalcorrectness)
+	setBarValue("politicalincorrectness",politicalincorrectness)
+	setBarValue("modernart",modernart)
+	setBarValue("traditionalart",traditionalart)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("overall-label").innerHTML = setLabel(left, overArray)
+    document.getElementById("gender-label").innerHTML = setLabel(genderequality, gndrArray)
+    document.getElementById("lgbt-label").innerHTML = setLabel(prolgbt, lgbtArray)
+    document.getElementById("national-label").innerHTML = setLabel(multiculturalism, ntnlArray)
+	document.getElementById("racial-label").innerHTML = setLabel(raceequality, raclArray)
+	document.getElementById("religious-label").innerHTML = setLabel(secularism, rlgsArray)
+	document.getElementById("sexual-label").innerHTML = setLabel(sexualliberation, sxulArray)
+	document.getElementById("sensitivity-label").innerHTML = setLabel(politicalcorrectness, snvtArray)
+	document.getElementById("artistic-label").innerHTML = setLabel(modernart, artsArray)
 
-    ideology = ""
+    /*ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
@@ -144,7 +208,7 @@ stats"></a></div></noscript>
             ideodist = dist
         }
     }
-    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideology-label").innerHTML = ideology*/
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -154,58 +218,84 @@ stats"></a></div></noscript>
         }
     }
 
+// Continue this later
     window.onload = function() {
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 650;
+        c.height = 1250;
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,800,1250);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-left")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
+        img = document.getElementById("img-right")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-might")
+        img = document.getElementById("img-genderequality")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-peace")
+        img = document.getElementById("img-genderroles")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-liberty")
+        img = document.getElementById("img-prolgbt")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
+        img = document.getElementById("img-antilgbt")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
+        img = document.getElementById("img-multiculturalism")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-progress")
+        img = document.getElementById("img-nativism")
         ctx.drawImage(img, 680, 530, 100, 100)
+		img = document.getElementById("img-raceequality")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-racerealism")
+        ctx.drawImage(img, 680, 650, 100, 100)
+		img = document.getElementById("img-secularism")
+        ctx.drawImage(img, 20, 770, 100, 100)
+        img = document.getElementById("img-religion")
+        ctx.drawImage(img, 680, 770, 100, 100)
+		img = document.getElementById("img-sexualliberation")
+        ctx.drawImage(img, 20, 890, 100, 100)
+        img = document.getElementById("img-sexualrepression")
+        ctx.drawImage(img, 680, 890, 100, 100)
+		img = document.getElementById("img-politicalcorrectness")
+        ctx.drawImage(img, 20, 1010, 100, 100)
+        img = document.getElementById("img-politicalincorrectness")
+        ctx.drawImage(img, 680, 1010, 100, 100)
+		img = document.getElementById("img-modernart")
+        ctx.drawImage(img, 20, 1130, 100, 100)
+        img = document.getElementById("img-traditionalart")
+        ctx.drawImage(img, 680, 1130, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
+		ctx.fillRect(120, 660, 560, 80)
+		ctx.fillRect(120, 780, 560, 80)
+		ctx.fillRect(120, 900, 560, 80)
+		ctx.fillRect(120, 1020, 560, 80)
+		ctx.fillRect(120, 1140, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillRect(120, 184, 5.6*left-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
+        ctx.fillRect(682-5.6*right, 184, 5.6*right-2, 72)
         ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 304, 5.6*might-2, 72)
+        ctx.fillRect(120, 304, 5.6*genderequality-2, 72)
         ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*peace, 304, 5.6*peace-2, 72)
+        ctx.fillRect(682-5.6*genderroles, 304, 5.6*genderroles-2, 72)
         ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*liberty-2, 72)
+        ctx.fillRect(120, 424, 5.6*prolgbt-2, 72)
         ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
+        ctx.fillRect(682-5.6*antilgbt, 424, 5.6*antilgbt-2, 72)
         ctx.fillStyle="#8bc34a"
-        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
+        ctx.fillRect(120, 544, 5.6*multiculturalism-2, 72)
         ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+        ctx.fillRect(682-5.6*nativism, 544, 5.6*nativism-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("8values", 20, 90)
-        ctx.font="50px Montserrat"
-        ctx.fillText(ideology, 20, 140)
+        ctx.fillText("Socialvalues", 20, 90)
+        /*ctx.font="50px Montserrat"
+        ctx.fillText(ideology, 20, 140)*/
 
         ctx.textAlign="left"
         if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
